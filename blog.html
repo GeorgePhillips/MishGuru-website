@@ -8,5 +8,16 @@ permalink: /blog/
 ---
 
 <div class="container">
-    <h2 class="centered-text">Blog content goes here</h2>
+    <ul class="blog-posts ten columns offset-by-one">
+        {% for post in site.posts %}
+            <li>
+                <h2>{{ post.title }}</h2>
+                <p class="post-subheader">{{ post.date | date: "%B %d, %Y" }} &middot; {{ post.category }}</p>
+
+                {{ post.excerpt }}
+
+                <p><a href="{{ post.url }}">Read more &rarr;</a></p>
+            </li>
+        {% endfor %}
+    </ul>
 </div>
