@@ -3,9 +3,8 @@ body, html {
 	color: #fff;
 }
 
-img {
+img, iframe {
 	max-width: 100%;
-	height: auto;
 }
 
 .centered-text {

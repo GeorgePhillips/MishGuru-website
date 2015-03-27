@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="container text-container">
+    <p class="post-subheader">{{ page.date | date: "%B %d, %Y" }} &middot; {{ page.category }}</p>
+
+    {{ content }}
+
+    <p class="post-subheader">Tagged: {{ page.tags | join: ", " }}</p>
+</div>

@@ -1,6 +1,11 @@
 ---
 title: Snap Tags Explained
-category: New Feature
+category: feature
+layout: post
+banner_image_path: /images/banners/snaptags.jpg
+title: Snap Tags Explained
+header: Snap Tags Explained
+description: Snap Tags Explained
 tags: ["Snapchat", "Snaptags", "Update", "Video"]
 ---
 
