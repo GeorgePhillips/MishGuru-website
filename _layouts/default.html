@@ -9,38 +9,41 @@
         <title>Mish Guru</title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="canonical" href="http://www.mish.guru/" />
+
         <meta property="og:site_name" content="Mish Guru" />
-        <meta property="og:title" content="Home" />
+        <meta property="og:title" content="{{ page.title }}" />
         <meta property="og:url" content="http://www.mish.guru/" />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content="The most powerful tool for posting, tracking and engaging on Snapchat™ Check Out Our Work" />
-        <meta property="og:image" content="images/banners/home.jpeg" />
-        <meta itemprop="name" content="Home" />
+        <meta property="og:description" content="{{ page.description }}" />
+        <meta property="og:image" content="{{ page.banner_image_path }}" />
+
+        <meta itemprop="name" content="{{ page.title }}" />
         <meta itemprop="url" content="http://www.mish.guru/" />
-        <meta itemprop="description" content="The most powerful tool for posting, tracking and engaging on Snapchat™ Check Out Our Work" />
-        <meta itemprop="thumbnailUrl" content="images/banners/home.jpeg" />
-        <link rel="image_src" href="images/banners/home.jpeg" />
-        <meta itemprop="image" content="images/banners/home.jpeg" />
-        <meta name="twitter:title" content="Home" />
-        <meta name="twitter:image" content="images/banners/home.jpeg" />
+        <meta itemprop="description" content="{{ page.description }}" />
+        <meta itemprop="thumbnailUrl" content="{{ page.banner_image_path }}" />
+
+        <link rel="image_src" href="{{ page.banner_image_path }}" />
+        <meta itemprop="image" content="{{ page.banner_image_path }}" />
+        <meta name="twitter:title" content="{{ page.title }}" />
+        <meta name="twitter:image" content="{{ page.banner_image_path }}" />
         <meta name="twitter:url" content="http://www.mish.guru/" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:description" content="The most powerful tool for posting, tracking and engaging on Snapchat™ Check Out Our Work" />
+        <meta name="twitter:description" content="{{ page.description }}" />
 
         <meta name="description" content="The most powerful tool for posting, tracking and engaging on Snapchat™" />
 
         <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/lib/normalize.css">
-        <link rel="stylesheet" href="css/lib/skeleton.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/lib/normalize.css">
+        <link rel="stylesheet" href="/css/lib/skeleton.css">
+        <link rel="stylesheet" href="/css/style.css">
 
-        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <link rel="icon" type="image/png" href="/images/favicon.ico">
     </head>
     <body>
-        <header>
+        <header style="background-image: url({{ page.banner_image_path}});">
             <nav>
                 <h1>
-                    <img src="images/logo.png" alt="Mish Guru">
+                    <img src="/images/logo.png" alt="Mish Guru">
                 </h1>
 
                 <ul>
@@ -54,7 +57,7 @@
             </nav>
 
             <div class="container centered-text">
-                <h1>THE MOST POWERFUL TOOL FOR POSTING, TRACKING AND ENGAGING ON SNAPCHAT™</h1>
+                <h1>{{ page.header }}</h1>
             </div>
         </header>
 
@@ -68,10 +71,10 @@
                 <p class="uppercased">Mish Guru, 10 Customs St E, Auckland, Auckland, 1010, New Zealand | <a href="mailto:hello@mish.guru">hello@mish.guru</a></p>
                 <p>
                     <a href="http://www.scoop.co.nz/stories/BU1405/S01054/giving-brands-power-to-unlock-snapchat-community.htm">
-                        <img src="images/media/scoop.png" alt="Scoop">
+                        <img src="/images/media/scoop.png" alt="Scoop">
                     </a>
                     <a href="http://nzentrepreneurs.org/2014-demo-day-startup-profiles-mish-guru/">
-                        <img src="images/media/nze.png" alt="NZ Entrepreneurs">
+                        <img src="/images/media/nze.png" alt="NZ Entrepreneurs">
                     </a>
                 </p>
                 <p class="copyright">&copy; 2014 Mish Guru Limited. | </span><a href="http://www.mish.guru/terms-of-service">Terms</a> &amp; <a href="http://www.mish.guru/privacy-policy/">Privacy</a></p>

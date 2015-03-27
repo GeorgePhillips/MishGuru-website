@@ -55,7 +55,7 @@ a:hover {
 
 header {
 	padding: 250px 0 200px 0;
-	background: #222 url(../images/banners/home.jpeg) center no-repeat;
+	background: #222 center no-repeat;
 	background-size: cover;
 
 	color: #fff;
